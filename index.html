@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Michelle Cai | Portfolio</title>
+  <title>Michelle Cai | Biostatistician & Clinical Data Analyst</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -13,8 +13,8 @@
       --card-bg: #ffffff;
       --text: #1e293b;
       --text-muted: #64748b;
-      --primary: #2563eb;
-      --primary-light: #eff6ff;
+      --primary: #0284c7;
+      --primary-light: #e0f2fe;
       --border: #e2e8f0;
       --accent: #0f172a;
     }
@@ -30,15 +30,15 @@
       background-color: var(--bg);
       color: var(--text);
       line-height: 1.6;
-      padding: 2rem 1rem;
+      padding: 2.5rem 1rem;
     }
 
     .container {
-      max-width: 800px;
+      max-width: 860px;
       margin: 0 auto;
     }
 
-    /* Profile Header */
+    /* Header */
     header {
       background: var(--card-bg);
       border-radius: 16px;
@@ -50,29 +50,36 @@
     }
 
     .avatar-placeholder {
-      width: 100px;
-      height: 100px;
+      width: 90px;
+      height: 90px;
       background: var(--primary-light);
       color: var(--primary);
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 2rem;
+      font-size: 1.8rem;
       font-weight: 700;
       margin: 0 auto 1.25rem;
       border: 2px solid var(--border);
     }
 
     h1 {
-      font-size: 1.85rem;
+      font-size: 2rem;
       font-weight: 700;
       color: var(--accent);
       margin-bottom: 0.25rem;
     }
 
     .headline {
-      font-size: 1.05rem;
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+    }
+
+    .contact-info {
+      font-size: 0.9rem;
       color: var(--text-muted);
       margin-bottom: 1.25rem;
     }
@@ -80,14 +87,14 @@
     .links {
       display: flex;
       justify-content: center;
-      gap: 1rem;
+      gap: 0.75rem;
       flex-wrap: wrap;
     }
 
     .btn {
       display: inline-flex;
       align-items: center;
-      padding: 0.5rem 1.25rem;
+      padding: 0.5rem 1.15rem;
       border-radius: 8px;
       font-size: 0.9rem;
       font-weight: 500;
@@ -101,7 +108,7 @@
     }
 
     .btn-primary:hover {
-      background: #1d4ed8;
+      background: #0369a1;
     }
 
     .btn-secondary {
@@ -114,7 +121,7 @@
       background: var(--bg);
     }
 
-    /* Section Cards */
+    /* Sections */
     section {
       background: var(--card-bg);
       border-radius: 16px;
@@ -134,7 +141,7 @@
     }
 
     .item {
-      margin-bottom: 1.25rem;
+      margin-bottom: 1.5rem;
     }
 
     .item:last-child {
@@ -146,18 +153,19 @@
       justify-content: space-between;
       align-items: baseline;
       flex-wrap: wrap;
-      margin-bottom: 0.25rem;
+      margin-bottom: 0.2rem;
     }
 
     .item-title {
       font-weight: 600;
       color: var(--accent);
-      font-size: 1rem;
+      font-size: 1.05rem;
     }
 
     .item-meta {
       font-size: 0.85rem;
       color: var(--text-muted);
+      font-weight: 500;
     }
 
     .item-subtitle {
@@ -167,17 +175,37 @@
       margin-bottom: 0.5rem;
     }
 
-    .item-desc {
+    ul.bullet-list {
+      list-style-type: disc;
+      padding-left: 1.25rem;
       font-size: 0.95rem;
       color: var(--text);
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+      margin-top: 0.4rem;
     }
 
-    /* Tags */
+    /* Skills Grid */
+    .skills-group {
+      margin-bottom: 1.25rem;
+    }
+
+    .skills-group:last-child {
+      margin-bottom: 0;
+    }
+
+    .skills-title {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--accent);
+      margin-bottom: 0.4rem;
+    }
+
     .tag-container {
       display: flex;
       flex-wrap: wrap;
-      gap: 0.5rem;
-      margin-top: 0.75rem;
+      gap: 0.45rem;
     }
 
     .tag {
@@ -189,11 +217,22 @@
       border-radius: 6px;
     }
 
+    .tag-neutral {
+      background: #f1f5f9;
+      color: #475569;
+    }
+
+    hr {
+      border: 0;
+      border-top: 1px solid var(--border);
+      margin: 1.25rem 0;
+    }
+
     footer {
       text-align: center;
       font-size: 0.85rem;
       color: var(--text-muted);
-      margin-top: 3rem;
+      margin-top: 2.5rem;
       padding-bottom: 1rem;
     }
   </style>
@@ -206,96 +245,195 @@
     <header>
       <div class="avatar-placeholder">MC</div>
       <h1>Michelle Cai</h1>
-      <p class="headline">Biostatistics & Clinical Research Portfolio</p>
+      <p class="headline">Biostatistician & Clinical Data Analyst</p>
+      <p class="contact-info">San Jose, CA · michellecai712@gmail.com · (858) 568-8482</p>
       <div class="links">
         <a href="https://www.linkedin.com/in/michellecai4/" target="_blank" class="btn btn-primary">LinkedIn Profile</a>
         <a href="https://github.com/michellecai712" target="_blank" class="btn btn-secondary">GitHub</a>
+        <a href="mailto:michellecai712@gmail.com" class="btn btn-secondary">Email Me</a>
       </div>
     </header>
 
     <!-- About Section -->
     <section>
       <h2>About Me</h2>
-      <p class="item-desc">
-        Welcome to my personal portfolio. I focus on biostatistics, clinical data analysis, and quantitative research. Explore some of my projects, academic background, and technical toolsets below.
+      <p style="font-size: 0.95rem; color: var(--text);">
+        Statistics graduate specializing in clinical trial methodology, survival analysis, and statistical modeling (R & SAS). Seeking Biostatistician and Clinical Data Analyst roles in the San Francisco Bay Area. Experienced in Phase I–III trial designs, dose-escalation modeling, longitudinal analysis, and Good Clinical Practice (GCP) compliance.
       </p>
-    </section>
-
-    <!-- Projects Section -->
-    <section>
-      <h2>Featured Projects</h2>
-      
-      <div class="item">
-        <div class="item-header">
-          <span class="item-title">Clinical Trial Data & Statistical Analysis</span>
-          <span class="item-meta">2026</span>
-        </div>
-        <p class="item-desc">
-          Exploratory data analysis and hypothesis testing evaluating treatment efficacy and safety endpoints using statistical modeling frameworks.
-        </p>
-        <div class="tag-container">
-          <span class="tag">R</span>
-          <span class="tag">Biostatistics</span>
-          <span class="tag">Hypothesis Testing</span>
-        </div>
-      </div>
-
-      <hr style="border: 0; border-top: 1px solid var(--border); margin: 1rem 0;">
-
-      <div class="item">
-        <div class="item-header">
-          <span class="item-title">Python Data Pipeline & Visualization</span>
-          <span class="item-meta">2026</span>
-        </div>
-        <p class="item-desc">
-          Data processing workflows and summary visualizations designed to parse raw experimental datasets into structured, interpretable tables and plots.
-        </p>
-        <div class="tag-container">
-          <span class="tag">Python</span>
-          <span class="tag">Pandas</span>
-          <span class="tag">Data Visualization</span>
-        </div>
-      </div>
     </section>
 
     <!-- Education Section -->
     <section>
-      <h2>Education & Certifications</h2>
+      <h2>Education</h2>
       
       <div class="item">
         <div class="item-header">
-          <span class="item-title">UC San Diego Extended Studies</span>
-          <span class="item-meta">Ongoing</span>
+          <span class="item-title">Rice University</span>
+          <span class="item-meta">Expected Dec 2027</span>
         </div>
-        <div class="item-subtitle">Professional Certificate in Clinical Trials Design & Management</div>
-        <p class="item-desc">Coursework in Biostatistical Methods and Human Subjects Protection.</p>
+        <div class="item-subtitle">Master of Statistics, Statistics and Biostatistics</div>
       </div>
 
-      <hr style="border: 0; border-top: 1px solid var(--border); margin: 1rem 0;">
+      <hr>
 
       <div class="item">
         <div class="item-header">
           <span class="item-title">The Ohio State University</span>
-          <span class="item-meta">Undergraduate Studies</span>
+          <span class="item-meta">May 2026</span>
+        </div>
+        <div class="item-subtitle">Bachelor of Science in Statistics</div>
+        <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 0.25rem;">
+          <strong>Relevant Coursework:</strong> Categorical Data Analysis, Generalized Linear Models, Statistical Inference, Probability Theory, Survey Research, Linear Algebra.
+        </p>
+      </div>
+    </section>
+
+    <!-- Technical Skills -->
+    <section>
+      <h2>Technical Skills & Methods</h2>
+      
+      <div class="skills-group">
+        <div class="skills-title">Programming & Software</div>
+        <div class="tag-container">
+          <span class="tag">R (RStudio, survival, pwr)</span>
+          <span class="tag">SAS (PROC PHREG, LIFETEST, FREQ, MIXED)</span>
+          <span class="tag">Python</span>
+          <span class="tag">SQL</span>
+          <span class="tag">MATLAB</span>
+          <span class="tag tag-neutral">HTML</span>
+          <span class="tag tag-neutral">Qualtrics</span>
+          <span class="tag tag-neutral">Excel (VLOOKUP, Pivot Tables)</span>
+        </div>
+      </div>
+
+      <div class="skills-group">
+        <div class="skills-title">Biostatistical Methods</div>
+        <div class="tag-container">
+          <span class="tag">Survival Analysis (Kaplan-Meier, Cox PH)</span>
+          <span class="tag">Clinical Trial Design (Phase I–III, 3+3)</span>
+          <span class="tag">Power & Sample Size Calculation</span>
+          <span class="tag">Longitudinal Data (GEE, LMM)</span>
+          <span class="tag">Generalized Linear Models</span>
+          <span class="tag">Categorical Data Analysis</span>
+          <span class="tag">Hypothesis Testing</span>
+        </div>
+      </div>
+
+      <div class="skills-group">
+        <div class="skills-title">Clinical Compliance & Frameworks</div>
+        <div class="tag-container">
+          <span class="tag tag-neutral">CDISC Concepts (SDTM, ADaM)</span>
+          <span class="tag tag-neutral">Good Clinical Practice (GCP)</span>
+          <span class="tag tag-neutral">FDA Submission Standards</span>
         </div>
       </div>
     </section>
 
-    <!-- Skills Section -->
+    <!-- Research & Projects -->
     <section>
-      <h2>Skills & Tools</h2>
-      <div class="tag-container">
-        <span class="tag">Biostatistics</span>
-        <span class="tag">Python</span>
-        <span class="tag">R</span>
-        <span class="tag">Clinical Study Design</span>
-        <span class="tag">Data Analysis</span>
-        <span class="tag">Git & GitHub</span>
+      <h2>Research & Clinical Projects</h2>
+      
+      <div class="item">
+        <div class="item-header">
+          <span class="item-title">Statistical Methods in Clinical Trials</span>
+          <span class="item-meta">Sept 2025 – Apr 2026</span>
+        </div>
+        <div class="item-subtitle">Research Assistant · OSU Mathematics Cycle Program</div>
+        <ul class="bullet-list">
+          <li>Investigated Phase I–III clinical trial designs and dose-escalation models under Ph.D. mentorship to evaluate trial design efficacy.</li>
+          <li>Applied survival analysis (Kaplan-Meier, Cox PH) and statistical power simulations in R for drug development evaluation.</li>
+          <li>Maintained data integrity and protocol compliance strictly aligned with Good Clinical Practice (GCP) guidelines.</li>
+          <li>Authored technical summaries and statistical reports translating methodology for multidisciplinary research teams.</li>
+        </ul>
+      </div>
+
+      <hr>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="item-title">ASA DataFest Competitor</span>
+          <span class="item-meta">March 2025</span>
+        </div>
+        <div class="item-subtitle">The Ohio State University</div>
+        <ul class="bullet-list">
+          <li>Analyzed large-scale housing and economic datasets across 15 US cities during a 36-hour competitive hackathon.</li>
+          <li>Constructed linear and generalized additive models (GAM) in R to estimate optimal consumer-leasing timing and presented results to industry judges.</li>
+        </ul>
+      </div>
+
+      <hr>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="item-title">120 Years of Olympic History Modeling</span>
+          <span class="item-meta">July 2024</span>
+        </div>
+        <div class="item-subtitle">Independent Data Project (R)</div>
+        <ul class="bullet-list">
+          <li>Modeled longitudinal datasets in R to evaluate macroeconomic effects (GDP) on athletic performance while controlling for host-country confounding variables.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section>
+      <h2>Professional Experience</h2>
+      
+      <div class="item">
+        <div class="item-header">
+          <span class="item-title">Student Instructional Assistant</span>
+          <span class="item-meta">Jan 2026 – Present</span>
+        </div>
+        <div class="item-subtitle">OSU Department of Statistics</div>
+        <ul class="bullet-list">
+          <li>Tutor undergraduates in statistical inference, probability theory, and software implementation using R and SAS.</li>
+          <li>Grade exams, homework, and coding projects for 100+ students, evaluating statistical rigor and algorithmic efficiency.</li>
+          <li>Adapted instructional materials to improve learning accessibility and outcomes.</li>
+        </ul>
+      </div>
+
+      <hr>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="item-title">Relocation Assistant</span>
+          <span class="item-meta">June 2025 – Present</span>
+        </div>
+        <div class="item-subtitle">OSU Human Resources</div>
+        <ul class="bullet-list">
+          <li>Coordinated employee onboarding logistics and managed relocation tracking across Excel and Google Sheets.</li>
+          <li>Designed, distributed, and analyzed post-relocation survey data using Qualtrics to identify operational bottlenecks and optimize HR support.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Publications & Certifications -->
+    <section>
+      <h2>Publications & Certifications</h2>
+      
+      <div class="item">
+        <div class="item-header">
+          <span class="item-title">Advanced Vehicle Technology Competitions</span>
+          <span class="item-meta">May 2025</span>
+        </div>
+        <p style="font-size: 0.95rem; color: var(--text);">
+          Cai, M. & Wang, C. <em>“Sponsor Spotlight: How Eaton Is Supporting the OSU & Columbus State BattChallenge Team’s Battery Design.”</em>
+        </p>
+      </div>
+
+      <hr>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="item-title">Crafting Meaningful HTML</span>
+          <span class="item-meta">Jan 2026</span>
+        </div>
+        <p style="font-size: 0.9rem; color: var(--text-muted);">LinkedIn Learning Credential</p>
       </div>
     </section>
 
     <footer>
-      <p>© 2026 Michelle Cai · Hosted via GitHub Pages</p>
+      <p>© 2026 Michelle Cai · Hosted on GitHub Pages</p>
     </footer>
 
   </div>
