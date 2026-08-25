@@ -2,10 +2,303 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My First Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Michelle Cai | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --text: #1e293b;
+      --text-muted: #64748b;
+      --primary: #2563eb;
+      --primary-light: #eff6ff;
+      --border: #e2e8f0;
+      --accent: #0f172a;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    /* Profile Header */
+    header {
+      background: var(--card-bg);
+      border-radius: 16px;
+      padding: 2.5rem 2rem;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+      border: 1px solid var(--border);
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .avatar-placeholder {
+      width: 100px;
+      height: 100px;
+      background: var(--primary-light);
+      color: var(--primary);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      font-weight: 700;
+      margin: 0 auto 1.25rem;
+      border: 2px solid var(--border);
+    }
+
+    h1 {
+      font-size: 1.85rem;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 0.25rem;
+    }
+
+    .headline {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      margin-bottom: 1.25rem;
+    }
+
+    .links {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.5rem 1.25rem;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: #ffffff;
+    }
+
+    .btn-primary:hover {
+      background: #1d4ed8;
+    }
+
+    .btn-secondary {
+      background: var(--card-bg);
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+
+    .btn-secondary:hover {
+      background: var(--bg);
+    }
+
+    /* Section Cards */
+    section {
+      background: var(--card-bg);
+      border-radius: 16px;
+      padding: 2rem;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+      border: 1px solid var(--border);
+      margin-bottom: 1.5rem;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--accent);
+      margin-bottom: 1.25rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.5rem;
+    }
+
+    .item {
+      margin-bottom: 1.25rem;
+    }
+
+    .item:last-child {
+      margin-bottom: 0;
+    }
+
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      margin-bottom: 0.25rem;
+    }
+
+    .item-title {
+      font-weight: 600;
+      color: var(--accent);
+      font-size: 1rem;
+    }
+
+    .item-meta {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .item-subtitle {
+      font-size: 0.95rem;
+      color: var(--primary);
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+    }
+
+    .item-desc {
+      font-size: 0.95rem;
+      color: var(--text);
+    }
+
+    /* Tags */
+    .tag-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 0.75rem;
+    }
+
+    .tag {
+      background: var(--primary-light);
+      color: var(--primary);
+      font-size: 0.8rem;
+      font-weight: 500;
+      padding: 0.25rem 0.65rem;
+      border-radius: 6px;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-top: 3rem;
+      padding-bottom: 1rem;
+    }
+  </style>
 </head>
-<body style="font-family: sans-serif; text-align: center; padding-top: 50px;">
-  <h1>Hello, World!</h1>
-  <p>Welcome to my personal site hosted on GitHub Pages.</p>
+<body>
+
+  <div class="container">
+    
+    <!-- Profile Header -->
+    <header>
+      <div class="avatar-placeholder">MC</div>
+      <h1>Michelle Cai</h1>
+      <p class="headline">Biostatistics & Clinical Research Portfolio</p>
+      <div class="links">
+        <a href="https://www.linkedin.com/in/michellecai4/" target="_blank" class="btn btn-primary">LinkedIn Profile</a>
+        <a href="https://github.com/michellecai712" target="_blank" class="btn btn-secondary">GitHub</a>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section>
+      <h2>About Me</h2>
+      <p class="item-desc">
+        Welcome to my personal portfolio. I focus on biostatistics, clinical data analysis, and quantitative research. Explore some of my projects, academic background, and technical toolsets below.
+      </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section>
+      <h2>Featured Projects</h2>
+      
+      <div class="item">
+        <div class="item-header">
+          <span class="item-title">Clinical Trial Data & Statistical Analysis</span>
+          <span class="item-meta">2026</span>
+        </div>
+        <p class="item-desc">
+          Exploratory data analysis and hypothesis testing evaluating treatment efficacy and safety endpoints using statistical modeling frameworks.
+        </p>
+        <div class="tag-container">
+          <span class="tag">R</span>
+          <span class="tag">Biostatistics</span>
+          <span class="tag">Hypothesis Testing</span>
+        </div>
+      </div>
+
+      <hr style="border: 0; border-top: 1px solid var(--border); margin: 1rem 0;">
+
+      <div class="item">
+        <div class="item-header">
+          <span class="item-title">Python Data Pipeline & Visualization</span>
+          <span class="item-meta">2026</span>
+        </div>
+        <p class="item-desc">
+          Data processing workflows and summary visualizations designed to parse raw experimental datasets into structured, interpretable tables and plots.
+        </p>
+        <div class="tag-container">
+          <span class="tag">Python</span>
+          <span class="tag">Pandas</span>
+          <span class="tag">Data Visualization</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section>
+      <h2>Education & Certifications</h2>
+      
+      <div class="item">
+        <div class="item-header">
+          <span class="item-title">UC San Diego Extended Studies</span>
+          <span class="item-meta">Ongoing</span>
+        </div>
+        <div class="item-subtitle">Professional Certificate in Clinical Trials Design & Management</div>
+        <p class="item-desc">Coursework in Biostatistical Methods and Human Subjects Protection.</p>
+      </div>
+
+      <hr style="border: 0; border-top: 1px solid var(--border); margin: 1rem 0;">
+
+      <div class="item">
+        <div class="item-header">
+          <span class="item-title">The Ohio State University</span>
+          <span class="item-meta">Undergraduate Studies</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section>
+      <h2>Skills & Tools</h2>
+      <div class="tag-container">
+        <span class="tag">Biostatistics</span>
+        <span class="tag">Python</span>
+        <span class="tag">R</span>
+        <span class="tag">Clinical Study Design</span>
+        <span class="tag">Data Analysis</span>
+        <span class="tag">Git & GitHub</span>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 Michelle Cai · Hosted via GitHub Pages</p>
+    </footer>
+
+  </div>
+
 </body>
 </html>
